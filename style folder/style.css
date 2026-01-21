@@ -19,6 +19,7 @@
     font-size: 20px;
     font-weight: bold;
     color: white;
+     cursor: pointer;/* button er upor cursor nile shape change */
   }
  
 /* main style */
@@ -32,7 +33,10 @@
 
 }
 header{ 
-    background-color: #fff8f3;
+    background-color: #FFF8F3;
+     background: url("../images/developer.png") , url("../images/header_bg.png"), #FFF8F3 ;/* background image dewar procedure.  pore background color na dile color over wright kore felbe.*/ 
+      background-position: top left, bottom right;/* 2 ta dewa karon 2 ta image  */
+     background-repeat: no-repeat;
     padding-top: 50px;
 }
  nav{width: 71%;   /*width ratio = 1140/1600=71 % */
@@ -58,3 +62,43 @@ nav .menu a{
 
 }
 
+#banner{
+    /* border: 1px solid red; kajer shubidharthe */
+    margin: 47px 38px 0 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+ #banner .banner-content{max-width: 585px;} /*eta na korle line chere chole jabe. */
+
+ #banner .banner-content h2{
+    font-size: 45px;
+     font-weight: 600; /*bold */
+     color: #474747;
+     margin-bottom: 5px;
+
+
+ }
+  #banner .banner-content h1{
+    font-size: 85px;
+    font-weight: bold;
+    color: #181818;
+    margin-bottom: 20px;
+
+  }
+  #banner .banner-content p{
+    font-size: 18px;
+    color: #757575;
+    line-height: 30px;
+    margin-bottom: 30px;
+
+  }
+
+  #banner .banner-image img{
+    max-width: 585px;
+ vertical-align: middle;/* tahole image er nicher faka jaiga thakbe na(default) */
+
+   }
